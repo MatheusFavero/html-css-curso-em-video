@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+    height: 100%;
+    background-color: #CCD3E2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(180deg, #A1ADC7, #0E2761);
+    color: white;
+    padding: 20px 0px 5px 0px;
+    width: 100%;
+}
+
+header > h1 {
+    font: normal normal 37px Bebas Neue;
+    margin-top: 0;
+    text-align: center;
+}
+
+header > p {
+    margin: 15px;
+    text-align: center;
+
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+main {
+    background-color: white;
+    width: 75%;
+}
+
+strong{
+    color: #0033A8;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0033A8;
+}
+
+a:hover{
+    color: #00c3ff;
+    text-decoration: underline;
+}
+
+.desenvolvimento{
+    margin: 20px;
+}
+
+.titulo{
+    font-family: android, Arial, Helvetica, sans-serif;
+    color: #0033A8;
+    background-image: linear-gradient(90deg, #0032a856, white);
+    padding: 3px;
+}
+
+.image-section {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.video{
+    background-color: #0E2761;
+    padding: 20px;
+}
+
+.conclusao{
+    margin: 20px 20px;
+}
+
+.conclusao > h3{
+    background-color: #47619b;
+    color: white;
+    margin: 0px;
+    padding: 7px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.39);
+
+}
+
+#extra{
+    background-color: #e9ecf8;
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.39);
+}
+
+#extra > ul{
+    columns: 2;
+}
+
+#extra > p{
+    margin: 0px;
+}
