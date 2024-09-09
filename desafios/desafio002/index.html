@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta importantíssima</title>
+    <style>
+        body {
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        }
+
+        #randomButton {
+        position: relative;
+        padding: 10px 20px;
+        background-color: #990404;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+
+        #fixedButton {
+        position: relative;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cuzinho hoje?</h1>
+    <button id="fixedButton" onclick="redirectToLink()">Sim</button>
+    <button id="randomButton" onclick="moveButton()">Não</button>
+
+    <script>
+        function getRandomPosition(element) {
+        const bodyWidth = document.body.clientWidth;
+        const bodyHeight = document.body.clientHeight;
+        const elementWidth = element.offsetWidth;
+        const elementHeight = element.offsetHeight;
+
+        const randomX = Math.floor(Math.random() * (bodyWidth - elementWidth));
+        const randomY = Math.floor(Math.random() * (bodyHeight - elementHeight));
+
+        return {x: randomX, y: randomY};
+        }
+
+        function moveButton() {
+        const button = document.getElementById('randomButton');
+        const {x, y} = getRandomPosition(button);
+
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+        }
+        function redirectToLink() {
+        window.location.href = 'https://www.youtube.com/watch?v=o9zEziMKAkQ&ab_channel=Scroway';
+        }
+    </script>
+</body>
+</html>
