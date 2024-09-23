@@ -18,6 +18,14 @@
 
         }
 
+        caption{
+
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -42,18 +50,16 @@
 
     <table>
 
+        <caption>População das unidades federativas</caption>
+
         <thead>
-
             <tr>
-
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
-
         </thead>
 
         <tbody>
-
             <tr>
                 <td>São Paulo</td>
                 <td class="num">45.973.190</td>
@@ -162,18 +168,13 @@
                 <td>Roraima</td>
                 <td class="num">716.793</td>
             </tr>
-
         </tbody>
 
         <tfoot>
-
             <tr>
-
-                <th>Total de habitantes</th>
-                <td class="num"><strong>212.583.720</strong></td>
-
+                <th scope="row">Total de habitantes</th>
+                <td class="num" scope="row"><strong>212.583.720</strong></td>
             </tr>
-
         </tfoot>
 
     </table>
