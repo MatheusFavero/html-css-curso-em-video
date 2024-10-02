@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Exemplo de formulário</h1>
+    <form action="armazenaDados.php" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iNome">Nome:</label>
+                <input type="text" name="nome" id="iNome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iEmail">Email:</label>
+                <input type="email" name="email" id="iEmail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="iTelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="iTelefone" required autocomplete="tel" placeholder="(XX)XXXX-XXXX">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>
