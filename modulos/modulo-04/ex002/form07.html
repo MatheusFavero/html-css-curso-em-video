@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="armazenaDados.php" method="get" autocomplete="on">
+        <p>
+            <label for="iEstado">Estado:</label>
+            <select name="estado" id="iEstado">
+                <option value="" selected>--- Estado ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                </optgroup>
+            </select>            
+        </p>
+        <p>
+            <label for="iProfissao">Profissão:</label>
+            <input type="text" name="profissao" id="iProfissao" list="listProfissao">
+            <datalist id="listProfissao">
+                <option>Advogado</option>
+                <option>Arquiteto</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+                <option>Professor</option>
+                <option>Designer</option>
+                <option>Desenvolvedor de Software</option>
+                <option>Enfermeiro</option>
+                <option>Psicólogo</option>
+                <option>Jornalista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="iMensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="iMensagem" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
