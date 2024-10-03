@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <h1>Exemplo de formulário</h1>
+
+    <form action="armazenaDados.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="iSexoMasculino" value="Masculino">
+            <label for="iSexoMasculino">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="iSexoFeminino" value="Feminino">
+            <label for="iSexoFeminino">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esporteFutebol" id="iEsporteFutebol">
+            <label for="iEsporteFutebol">Futebol</label><br>
+
+            <input type="checkbox" name="esporteBasquete" id="iEsporteBasquete">
+            <label for="iEsporteBasquete">Basquete</label><br>
+
+            <input type="checkbox" name="esporteVolei" id="iEsporteVolei">
+            <label for="iEsporteVolei">Vôlei</label><br>
+
+            <input type="checkbox" name="esporteAtletismo" id="iEsporteAtletismo">
+            <label for="iEsporteAtletismo">Atletismo</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>
