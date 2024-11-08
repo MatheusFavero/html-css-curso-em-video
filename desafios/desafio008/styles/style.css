@@ -3,6 +3,8 @@
 :root {
     --verde: #48a09d;
     --lilas: #5F2C82;
+    --verdeEscuro: #2c615e;
+    --verdeClaro: #60d3cf;
 }
 
 * {
@@ -55,3 +57,73 @@ main {
     display: block;
     padding: 10px;
 }
+
+#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#form > p {
+    font-size: 0.8em;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+form {
+    padding: 5px;
+}
+
+.campo {
+    margin: 5px 0px;
+}
+
+.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 240px;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--verdeEscuro);
+}
+
+.button {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    width: 240px;
+    height: 40px;
+    background-color: var(--verdeClaro);
+    border-radius: 5px;
+    border: 1px solid var(--verde);
+    color: var(--verdeEscuro);
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.button > span {
+    font-size: .8em;
+}
+
+.button:hover {
+    background-color: var(--verdeEscuro);
+    color: var(--verdeClaro);
+}
+
