@@ -90,7 +90,7 @@ form {
 form > input[type=submit] {
     display: block;
     font-size: 1em;
-    width: 240px;
+    width: 184px;
     height: 40px;
     background-color: var(--verde);
     color: white;
@@ -104,11 +104,11 @@ form > input[type=submit]:hover{
 }
 
 .button {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-size: 1em;
     text-decoration: none;
-    width: 240px;
+    width: 184px;
     height: 40px;
     background-color: var(--verdeClaro);
     border-radius: 5px;

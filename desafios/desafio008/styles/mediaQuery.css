@@ -8,6 +8,7 @@
 
     #login {
         width: 80vw;
+        height: 280px;
     }
 
     #image {
@@ -37,7 +38,8 @@
     }
     
     #login {
-        width: 900px;
+        width: 800px;
+        height: 300px;
     }
 
     #image {
@@ -57,5 +59,6 @@
 
     #form > p {
         font-size: 1em;
+        padding: 10px 0px;
     }
 }
